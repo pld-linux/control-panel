@@ -13,6 +13,7 @@ Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	%{name}-%{version}.tar.gz
+# Source0-md5:	cb29e9fb4b290f21a358f01532940ae9
 Patch0:		%{name}-FHS2.0.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
