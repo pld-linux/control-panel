@@ -12,7 +12,7 @@ Group(pl):   Narzêdzia/System
 Source:      %{name}-%{version}.tar.gz
 Patch0:      control-panel-%{version}_gtk-1.1.patch
 Patch1:      control-panel-makefile.patch
-BuildRoot:   /tmp/%{name}-%{version}-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 The Red Hat control panel is an X program launcher for various configuration
