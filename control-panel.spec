@@ -9,7 +9,7 @@ Summary(ru):	Утилита для запуска программ настройки системы для X
 Summary(uk):	Утил╕та для запуску програм налагодження системи п╕д X
 Name:		control-panel
 Version:	3.18
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/System
 Source0:	%{name}-%{version}.tar.gz
@@ -73,7 +73,7 @@ Control-panel - це граф╕чна утил╕та, яка запуска╓ р╕зноман╕тн╕ утил╕ти
 
 %build
 %{__make} \
-CFLAGS="%{rpmcflags} -I/usr/include/glib-1.2 -I/usr/X11R6/include -I/usr/X11R6/include/gtk-1.2 -I/usr/lib/glib/include"
+CFLAGS="%{rpmcflags} -I/usr/include/glib-1.2 -I/usr/X11R6/include -I/usr/include/gtk-1.2 -I/usr/lib/glib/include"
 
 %install
 rm -rf $RPM_BUILD_ROOT
