@@ -66,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Thu Nov  5 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [3.7-8]
-- added control-panel-makefile.patch witch allow build C-P from non-root
+- added control-panel-makefile.patch which allow build C-P from non-root
   account and allow use $RPM_OPT_FLAGS during compile.
 
 * Sat Oct 31 1998 Przemys³aw Bia³ek <lobo@polbox.com>
