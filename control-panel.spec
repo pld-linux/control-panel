@@ -12,8 +12,6 @@ Version:	3.18
 Release:	1
 License:	GPL
 Group:		Applications/System
-Group(de):	Applikationen/System
-Group(pl):	Aplikacje/System
 Source0:	%{name}-%{version}.tar.gz
 Patch0:		%{name}-FHS2.0.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
