@@ -58,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%config(missingok) /etc/X11/applnk/System/control-panel.desktop
+/usr/X11R6/share/applnk/System/control-panel.desktop
 
 %attr(755,root,root) %{_bindir}/control-panel
 
