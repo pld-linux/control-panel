@@ -7,10 +7,11 @@ Name:		control-panel
 Version:	3.11
 Release:	3
 License:	GPL
-Group:		Utilities/System
-Group(pl):	Narzêdzia/System
+Group:		Applications/System
+Group(de):	Applikationen/System
+Group(pl):	Aplikacje/System
 Source0:	%{name}-%{version}.tar.gz
-Patch0:		control-panel-FHS2.0.patch
+Patch0:		%{name}-FHS2.0.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -46,15 +47,12 @@ masasýna bildirirler.
 %patch -p1
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS -I/usr/lib/glib/include -I/usr/X11R6/include"
+%{__make} CFLAGS="%{rpmcflags} -I/usr/lib/glib/include -I/usr/X11R6/include"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT mandir=%{_mandir} OWNER= install install-man
-strip $RPM_BUILD_ROOT%{_bindir}/control-panel
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man8/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
