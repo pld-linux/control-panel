@@ -3,8 +3,12 @@ Summary(de):	Red-Hat-Kontrollfeld
 Summary(fr):	Panneau de contrТle de Red Hat
 Summary(pl):	Panel Kontrolny
 Summary(tr):	Red Hat Denetim MasasЩ
+Summary(pt_BR):	Painel de Controle Red Hat
+Summary(es):	Panel de Control Red Hat
+Summary(ru):	Утилита для запуска программ настройки системы для X
+Summary(uk):	Утил╕та для запуску програм налагодження системи п╕д X
 Name:		control-panel
-Version:	3.11
+Version:	3.18
 Release:	3
 License:	GPL
 Group:		Applications/System
@@ -13,6 +17,8 @@ Group(pl):	Aplikacje/System
 Source0:	%{name}-%{version}.tar.gz
 Patch0:		%{name}-FHS2.0.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+#%define		_prefix		/usr/X11R6
 
 %description
 The Red Hat control panel is an X program launcher for various
@@ -42,17 +48,47 @@ Red Hat denetim masasЩ, bazЩ ayarlama araГlarЩ iГin X programlarЩ
 gЖzЭkmesi iГin o araГla ilgili paketler gerekli bilgileri denetim
 masasЩna bildirirler.
 
+%description -l pt_BR
+O control-panel (painel de controle) Red Hat И um programa X que
+executa vАrias ferramentas de configuraГЦo. Outros pacotes oferecem
+informaГЦo que permitem a visualizaГЦo das ferramentas disponМveis
+no menu do control-panel.
+
+%description -l es
+Control-panel (panel de control) Red Hat es un programa X que
+ejecuta varias herramientas de configuraciСn. Otros paquetes ofrecen
+informaciСn que permiten la visualizaciСn de las herramientas
+disponibles en el menЗ del panel de control.
+
+%description -l ru
+Control-panel - это графическая утилита, запускающая различные утилиты
+конфигурации системы под X.
+
+%description -l uk
+Control-panel - це граф╕чна утил╕та, яка запуска╓ р╕зноман╕тн╕ утил╕ти
+конф╕гурування системи п╕д X.
+
 %prep
 %setup -q
-%patch -p1
+#%patch -p1
 
 %build
-%{__make} CFLAGS="%{rpmcflags} -I/usr/lib/glib/include -I/usr/X11R6/include"
+%{__make} \
+CFLAGS="%{rpmcflags} -I/usr/include/glib-1.2 -I/usr/X11R6/include -I/usr/X11R6/include/gtk-1.2 -I/usr/lib/glib/include"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_applnkdir}/System
+install control-panel.desktop $RPM_BUILD_ROOT%{_applnkdir}/System/control-panel.desktop
 
-%{__make} DESTDIR=$RPM_BUILD_ROOT mandir=%{_mandir} OWNER= install install-man
+%{__make} \
+	DESTDIR=$RPM_BUILD_ROOT \
+	MANDIR=%{_mandir} \
+	BINDIR=%{_bindir} \
+	MANDIR=%{_mandir} \
+	LIBDIR=%{_libdir} \
+	OWNER= \
+	install install-man
 
 %clean
 rm -rf $RPM_BUILD_ROOT
