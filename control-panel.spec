@@ -56,14 +56,14 @@ strip $RPM_BUILD_ROOT%{_bindir}/control-panel
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644, root, root, 755)
+%defattr(644,root,root,755)
 %config(missingok) /etc/X11/wmconfig/control-panel
 
-%attr(755, root, root) %{_bindir}/control-panel
+%attr(755,root,root) %{_bindir}/control-panel
 
 %{_libdir}/rhs/control-panel/loopy/*
 
-%attr(755, root, root) %{_libdir}/rhs/control-panel/*
+%attr(755,root,root) %{_libdir}/rhs/control-panel/*
 %{_mandir}/man8/*
 
 %changelog
