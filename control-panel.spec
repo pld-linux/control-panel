@@ -46,12 +46,12 @@ masasýna bildirirler.
 %patch -p1
 
 %build
-make CFLAGS="$RPM_OPT_FLAGS -I/usr/lib/glib/include -I/usr/X11R6/include"
+%{__make} CFLAGS="$RPM_OPT_FLAGS -I/usr/lib/glib/include -I/usr/X11R6/include"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-make DESTDIR=$RPM_BUILD_ROOT mandir=%{_mandir} OWNER= install install-man
+%{__make} DESTDIR=$RPM_BUILD_ROOT mandir=%{_mandir} OWNER= install install-man
 strip $RPM_BUILD_ROOT%{_bindir}/control-panel
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man8/*
