@@ -64,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/lib/rhs/control-panel/loopy/*
 
 %attr(755, root, root) /usr/lib/rhs/control-panel/*
-%attr(644, root,  man) /usr/man/man8/*
+%attr(644, root,  man) %{_mandir}/man8/*
 
 %changelog
 * Tue Jan 26 1999 Micha³ Kuratczyk <kurkens@polbox.com>
