@@ -61,9 +61,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %attr(755, root, root) /usr/bin/control-panel
 
-/usr/lib/rhs/control-panel/loopy/*
+%{_libdir}/rhs/control-panel/loopy/*
 
-%attr(755, root, root) /usr/lib/rhs/control-panel/*
+%attr(755, root, root) %{_libdir}/rhs/control-panel/*
 %{_mandir}/man8/*
 
 %changelog
