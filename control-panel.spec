@@ -9,7 +9,7 @@ Summary(ru):	Утилита для запуска программ настройки системы для X
 Summary(uk):	Утил╕та для запуску програм налагодження системи п╕д X
 Name:		control-panel
 Version:	3.18
-Release:	3
+Release:	1
 License:	GPL
 Group:		Applications/System
 Group(de):	Applikationen/System
