@@ -11,7 +11,7 @@ Group:		Utilities/System
 Group(pl):	Narzêdzia/System
 Source:		%{name}-%{version}.tar.gz
 Patch:		control-panel-FHS2.0.patch
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The Red Hat control panel is an X program launcher for various configuration
