@@ -5,9 +5,10 @@ Summary(pl): Panel Kontrolny
 Summary(tr): Red Hat Denetim Masasý
 Name:        control-panel
 Version:     3.7
-Release:     8
+Release:     9
 Copyright:   GPL
 Group:       Utilities/System
+Group(pl):   Narzêdzia/System
 Source:      %{name}-%{version}.tar.gz
 Patch0:      control-panel-%{version}_gtk-1.1.patch
 Patch1:      control-panel-makefile.patch
@@ -29,8 +30,8 @@ outils de configuration. Les autres paquetages fournissent l'information qui
 leur permet d'apparaitre dans le menu du tableau de bord.
 
 %description -l pl
-Control-panel jest programem korzystaj±cym z Xwindows uruchamiaj±cym ró¿ne
-narzêdzia konfiguracyjne. Inne pakiety same wstawiaj± informacje które
+Control-panel jest programem korzystaj±cym z X Window System uruchamiaj±cym
+ró¿ne narzêdzia konfiguracyjne. Inne pakiety same wstawiaj± informacje, które
 pozwalaj± wy¶wietlaæ panelowi kontrolnemu listê dostêpnych narzêdzi.
 
 %description -l tr
@@ -56,14 +57,23 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644, root, root, 755)
+%config(missingok) /etc/X11/wmconfig/control-panel
+
 %attr(755, root, root) /usr/bin/control-panel
-%attr(644, root,  man) /usr/man/man8/control-panel.8
+
 /usr/lib/rhs/control-panel/loopy/*
-%attr(755, root, root) /usr/lib/rhs/control-panel/dialog.tcl
-%attr(755, root, root) /usr/lib/rhs/control-panel/bindings.tcl
-/etc/X11/wmconfig/control-panel
+
+%attr(755, root, root) /usr/lib/rhs/control-panel/*
+%attr(644, root,  man) /usr/man/man8/*
 
 %changelog
+* Tue Jan 26 1999 Micha³ Kuratczyk <kurkens@polbox.com>
+  [3.7-9]
+- added "Group(pl)"
+- fixed pl translation
+- added "%config(missingok)" for wmconfig file
+- simplifications and cosmetics in %%files
+
 * Thu Nov  5 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [3.7-8]
 - added control-panel-makefile.patch which allow build C-P from non-root
