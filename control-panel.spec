@@ -1,17 +1,16 @@
-Summary:     Red Hat Control Panel
-Summary(de): Red-Hat-Kontrollfeld
-Summary(fr): Panneau de contrôle de Red Hat
-Summary(pl): Panel Kontrolny
-Summary(tr): Red Hat Denetim Masasý
-Name:        control-panel
-Version:     3.7
-Release:     9
-Copyright:   GPL
-Group:       Utilities/System
-Group(pl):   Narzêdzia/System
-Source:      %{name}-%{version}.tar.gz
-Patch0:      control-panel-%{version}_gtk-1.1.patch
-Patch1:      control-panel-makefile.patch
+Summary:	Red Hat Control Panel
+Summary(de):	Red-Hat-Kontrollfeld
+Summary(fr):	Panneau de contrôle de Red Hat
+Summary(pl):	Panel Kontrolny
+Summary(tr):	Red Hat Denetim Masasý
+Name:		control-panel
+Version:	3.11
+Release:	3
+Copyright:	GPL
+Group:		Utilities/System
+Group(pl):	Narzêdzia/System
+Source:		%{name}-%{version}.tar.gz
+Patch:		control-panel-FHS2.0.patch
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -41,27 +40,29 @@ için o araçla ilgili paketler gerekli bilgileri denetim masasýna bildirirler.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch -p1
 
 %build
-make
+make CFLAGS="$RPM_OPT_FLAGS -I/usr/lib/glib/include -I/usr/X11R6/include"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make DESTDIR=$RPM_BUILD_ROOT OWNER= install install-man
+
+make DESTDIR=$RPM_BUILD_ROOT mandir=%{_mandir} OWNER= install install-man
 strip $RPM_BUILD_ROOT%{_bindir}/control-panel
+
+gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man8/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%config(missingok) /etc/X11/wmconfig/control-panel
+%config(missingok) /etc/X11/applnk/System/control-panel.desktop
 
 %attr(755,root,root) %{_bindir}/control-panel
 
-%{_libdir}/rhs/control-panel/loopy/*
+%{_libdir}/rhs/control-panel/loopy
 
-%attr(755,root,root) %{_libdir}/rhs/control-panel/*
+%attr(755,root,root) %{_libdir}/rhs/control-panel/*.tcl
 %{_mandir}/man8/*
