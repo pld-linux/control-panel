@@ -50,7 +50,7 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT OWNER= install install-man
-strip $RPM_BUILD_ROOT/usr/bin/control-panel
+strip $RPM_BUILD_ROOT%{_bindir}/control-panel
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -59,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644, root, root, 755)
 %config(missingok) /etc/X11/wmconfig/control-panel
 
-%attr(755, root, root) /usr/bin/control-panel
+%attr(755, root, root) %{_bindir}/control-panel
 
 %{_libdir}/rhs/control-panel/loopy/*
 
