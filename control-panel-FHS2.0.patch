@@ -1,0 +1,14 @@
+diff -ur control-panel-3.11.orig/Makefile control-panel-3.11/Makefile
+--- control-panel-3.11.orig/Makefile	Thu Mar 18 01:18:09 1999
++++ control-panel-3.11/Makefile	Thu Jul 15 19:31:07 1999
+@@ -16,8 +16,8 @@
+ 	$(INSTALL) -m 755 $(OWNER) $< $(DESTDIR)/usr/bin
+ 
+ install-man: 	$(MANS)
+-	$(INSTALL) -m 755 $(OWNER) -d $(DESTDIR)/usr/man/man8
+-	$(INSTALL) -m 755 $(OWNER) $< $(DESTDIR)/usr/man/man8
++	$(INSTALL) -m 755 $(OWNER) -d $(DESTDIR)/usr/share/man/man8
++	$(INSTALL) -m 755 $(OWNER) $< $(DESTDIR)/usr/share/man/man8
+ 	$(INSTALL) -m 755 $(OWNER) -d $(DESTDIR)/usr/lib/rhs/control-panel
+ 	$(INSTALL) -m 755 $(OWNER) dialog.tcl $(DESTDIR)/usr/lib/rhs/control-panel
+ 	$(INSTALL) -m 755 $(OWNER) bindings.tcl $(DESTDIR)/usr/lib/rhs/control-panel
