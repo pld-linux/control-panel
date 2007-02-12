@@ -1,12 +1,12 @@
 Summary:	Red Hat Control Panel
-Summary(de.UTF-8):   Red-Hat-Kontrollfeld
-Summary(fr.UTF-8):   Panneau de contrôle de Red Hat
-Summary(pl.UTF-8):   Panel Kontrolny
-Summary(tr.UTF-8):   Red Hat Denetim Masası
-Summary(pt_BR.UTF-8):   Painel de Controle Red Hat
-Summary(es.UTF-8):   Panel de Control Red Hat
-Summary(ru.UTF-8):   Утилита для запуска программ настройки системы для X
-Summary(uk.UTF-8):   Утиліта для запуску програм налагодження системи під X
+Summary(de.UTF-8):	Red-Hat-Kontrollfeld
+Summary(fr.UTF-8):	Panneau de contrôle de Red Hat
+Summary(pl.UTF-8):	Panel Kontrolny
+Summary(tr.UTF-8):	Red Hat Denetim Masası
+Summary(pt_BR.UTF-8):	Painel de Controle Red Hat
+Summary(es.UTF-8):	Panel de Control Red Hat
+Summary(ru.UTF-8):	Утилита для запуска программ настройки системы для X
+Summary(uk.UTF-8):	Утиліта для запуску програм налагодження системи під X
 Name:		control-panel
 Version:	3.18
 Release:	2
