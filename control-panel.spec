@@ -1,12 +1,12 @@
 Summary:	Red Hat Control Panel
-Summary(de):	Red-Hat-Kontrollfeld
-Summary(fr):	Panneau de contrôle de Red Hat
-Summary(pl):	Panel Kontrolny
-Summary(tr):	Red Hat Denetim Masası
-Summary(pt_BR):	Painel de Controle Red Hat
-Summary(es):	Panel de Control Red Hat
-Summary(ru):	õÔÉÌÉÔÁ ÄÌÑ ÚÁĞÕÓËÁ ĞÒÏÇÒÁÍÍ ÎÁÓÔÒÏÊËÉ ÓÉÓÔÅÍÙ ÄÌÑ X
-Summary(uk):	õÔÉÌ¦ÔÁ ÄÌÑ ÚÁĞÕÓËÕ ĞÒÏÇÒÁÍ ÎÁÌÁÇÏÄÖÅÎÎÑ ÓÉÓÔÅÍÉ Ğ¦Ä X
+Summary(de.UTF-8):   Red-Hat-Kontrollfeld
+Summary(fr.UTF-8):   Panneau de contrÃ´le de Red Hat
+Summary(pl.UTF-8):   Panel Kontrolny
+Summary(tr.UTF-8):   Red Hat Denetim MasasÄ±
+Summary(pt_BR.UTF-8):   Painel de Controle Red Hat
+Summary(es.UTF-8):   Panel de Control Red Hat
+Summary(ru.UTF-8):   Ğ£Ñ‚Ğ¸Ğ»Ğ¸Ñ‚Ğ° Ğ´Ğ»Ñ Ğ·Ğ°Ğ¿ÑƒÑĞºĞ° Ğ¿Ñ€Ğ¾Ğ³Ñ€Ğ°Ğ¼Ğ¼ Ğ½Ğ°ÑÑ‚Ñ€Ğ¾Ğ¹ĞºĞ¸ ÑĞ¸ÑÑ‚ĞµĞ¼Ñ‹ Ğ´Ğ»Ñ X
+Summary(uk.UTF-8):   Ğ£Ñ‚Ğ¸Ğ»Ñ–Ñ‚Ğ° Ğ´Ğ»Ñ Ğ·Ğ°Ğ¿ÑƒÑĞºÑƒ Ğ¿Ñ€Ğ¾Ğ³Ñ€Ğ°Ğ¼ Ğ½Ğ°Ğ»Ğ°Ğ³Ğ¾Ğ´Ğ¶ĞµĞ½Ğ½Ñ ÑĞ¸ÑÑ‚ĞµĞ¼Ğ¸ Ğ¿Ñ–Ğ´ X
 Name:		control-panel
 Version:	3.18
 Release:	2
@@ -24,48 +24,48 @@ The Red Hat control panel is an X program launcher for various
 configuration tools. Other packages provide information which allow
 them to show up on the control panel's menu of available tools.
 
-%description -l de
-Das Red-Hat-Kontrollfeld ist eine X-Programm-Startrampe für
+%description -l de.UTF-8
+Das Red-Hat-Kontrollfeld ist eine X-Programm-Startrampe fÃ¼r
 verschiedene Konfigurations-Tools. Von den Softwarepaketen gelieferte
-Informatinen können im Menü der verfügbaren Tools angezeigt werden.
+Informatinen kÃ¶nnen im MenÃ¼ der verfÃ¼gbaren Tools angezeigt werden.
 
-%description -l fr
+%description -l fr.UTF-8
 Le tableau de bord Red Hat est un lanceur de programmes X pour les
-différents outils de configuration. Les autres paquetages fournissent
+diffÃ©rents outils de configuration. Les autres paquetages fournissent
 l'information qui leur permet d'apparaitre dans le menu du tableau de
 bord.
 
-%description -l pl
-Control-panel jest programem korzystaj±cym z X Window System
-uruchamiaj±cym ró¿ne narzêdzia konfiguracyjne. Inne pakiety same
-wstawiaj± informacje, które pozwalaj± wy¶wietlaæ panelowi kontrolnemu
-listê dostêpnych narzêdzi.
+%description -l pl.UTF-8
+Control-panel jest programem korzystajÄ…cym z X Window System
+uruchamiajÄ…cym rÃ³Å¼ne narzÄ™dzia konfiguracyjne. Inne pakiety same
+wstawiajÄ… informacje, ktÃ³re pozwalajÄ… wyÅ›wietlaÄ‡ panelowi kontrolnemu
+listÄ™ dostÄ™pnych narzÄ™dzi.
 
-%description -l tr
-Red Hat denetim masası, bazı ayarlama araçları için X programları
-çalıştırıcısıdır. Bir aracın denetim masasındaki araçlar arasında
-gözükmesi için o araçla ilgili paketler gerekli bilgileri denetim
-masasına bildirirler.
+%description -l tr.UTF-8
+Red Hat denetim masasÄ±, bazÄ± ayarlama araÃ§larÄ± iÃ§in X programlarÄ±
+Ã§alÄ±ÅŸtÄ±rÄ±cÄ±sÄ±dÄ±r. Bir aracÄ±n denetim masasÄ±ndaki araÃ§lar arasÄ±nda
+gÃ¶zÃ¼kmesi iÃ§in o araÃ§la ilgili paketler gerekli bilgileri denetim
+masasÄ±na bildirirler.
 
-%description -l pt_BR
-O control-panel (painel de controle) Red Hat é um programa X que
-executa várias ferramentas de configuração. Outros pacotes oferecem
-informação que permitem a visualização das ferramentas disponíveis
+%description -l pt_BR.UTF-8
+O control-panel (painel de controle) Red Hat Ã© um programa X que
+executa vÃ¡rias ferramentas de configuraÃ§Ã£o. Outros pacotes oferecem
+informaÃ§Ã£o que permitem a visualizaÃ§Ã£o das ferramentas disponÃ­veis
 no menu do control-panel.
 
-%description -l es
+%description -l es.UTF-8
 Control-panel (panel de control) Red Hat es un programa X que
-ejecuta varias herramientas de configuración. Otros paquetes ofrecen
-información que permiten la visualización de las herramientas
-disponibles en el menú del panel de control.
+ejecuta varias herramientas de configuraciÃ³n. Otros paquetes ofrecen
+informaciÃ³n que permiten la visualizaciÃ³n de las herramientas
+disponibles en el menÃº del panel de control.
 
-%description -l ru
-Control-panel - ÜÔÏ ÇÒÁÆÉŞÅÓËÁÑ ÕÔÉÌÉÔÁ, ÚÁĞÕÓËÁÀİÁÑ ÒÁÚÌÉŞÎÙÅ ÕÔÉÌÉÔÙ
-ËÏÎÆÉÇÕÒÁÃÉÉ ÓÉÓÔÅÍÙ ĞÏÄ X.
+%description -l ru.UTF-8
+Control-panel - ÑÑ‚Ğ¾ Ğ³Ñ€Ğ°Ñ„Ğ¸Ñ‡ĞµÑĞºĞ°Ñ ÑƒÑ‚Ğ¸Ğ»Ğ¸Ñ‚Ğ°, Ğ·Ğ°Ğ¿ÑƒÑĞºĞ°ÑÑ‰Ğ°Ñ Ñ€Ğ°Ğ·Ğ»Ğ¸Ñ‡Ğ½Ñ‹Ğµ ÑƒÑ‚Ğ¸Ğ»Ğ¸Ñ‚Ñ‹
+ĞºĞ¾Ğ½Ñ„Ğ¸Ğ³ÑƒÑ€Ğ°Ñ†Ğ¸Ğ¸ ÑĞ¸ÑÑ‚ĞµĞ¼Ñ‹ Ğ¿Ğ¾Ğ´ X.
 
-%description -l uk
-Control-panel - ÃÅ ÇÒÁÆ¦ŞÎÁ ÕÔÉÌ¦ÔÁ, ÑËÁ ÚÁĞÕÓËÁ¤ Ò¦ÚÎÏÍÁÎ¦ÔÎ¦ ÕÔÉÌ¦ÔÉ
-ËÏÎÆ¦ÇÕÒÕ×ÁÎÎÑ ÓÉÓÔÅÍÉ Ğ¦Ä X.
+%description -l uk.UTF-8
+Control-panel - Ñ†Ğµ Ğ³Ñ€Ğ°Ñ„Ñ–Ñ‡Ğ½Ğ° ÑƒÑ‚Ğ¸Ğ»Ñ–Ñ‚Ğ°, ÑĞºĞ° Ğ·Ğ°Ğ¿ÑƒÑĞºĞ°Ñ” Ñ€Ñ–Ğ·Ğ½Ğ¾Ğ¼Ğ°Ğ½Ñ–Ñ‚Ğ½Ñ– ÑƒÑ‚Ğ¸Ğ»Ñ–Ñ‚Ğ¸
+ĞºĞ¾Ğ½Ñ„Ñ–Ğ³ÑƒÑ€ÑƒĞ²Ğ°Ğ½Ğ½Ñ ÑĞ¸ÑÑ‚ĞµĞ¼Ğ¸ Ğ¿Ñ–Ğ´ X.
 
 %prep
 %setup -q
