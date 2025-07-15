@@ -69,7 +69,7 @@ Control-panel - це графічна утиліта, яка запускає р
 
 %prep
 %setup -q
-#%patch -p1
+#%%patch -p1
 
 %build
 %{__make} \
